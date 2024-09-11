@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: "Assets/Scenes/Main@\u85E4\u539F\u714C\u57FA.unity"
     guid: 022586172c9969e42975188b8cc56e8a
   - enabled: 1
-    path: Assets/Scenes/Risult.unity
+    path: Assets/Scenes/Failure.unity
     guid: f4a78649605f97642be2fcf36d9fcea2
   m_configObjects: {}
