@@ -44,7 +44,7 @@ public class HP : MonoBehaviour
     
     void Die()
     {
-        SceneManager.LoadScene("Result");
+        SceneManager.LoadScene("Failure");
     }
 
 
