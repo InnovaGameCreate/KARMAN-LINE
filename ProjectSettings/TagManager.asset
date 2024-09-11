@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
+  - Earth
+  - Enemy
+  - Bullet
+  - Laser
   layers:
   - Default
   - TransparentFX
