@@ -5,6 +5,7 @@ using UnityEngine;
 public class exp : MonoBehaviour
 {
     private ParticleSystem particleSystem;
+    [SerializeField] private float lifetime;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,8 @@ public class exp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time == 1)
+        lifetime = lifetime - Time.deltaTime;
+        if (lifetime < 0)
         {
             particleSystem.Stop();
         }
@@ -23,8 +25,6 @@ public class exp : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log("Collided with: " + other.gameObject.name + " with tag: " + other.gameObject.tag);
-
         if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(other.gameObject);

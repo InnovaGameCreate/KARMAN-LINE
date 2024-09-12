@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] private float SpeedX;
-    [SerializeField] private float moveLifeTime;
+    [SerializeField] private float LifeTime;
 
     // Start is called before the first frame update
     void Start()
@@ -16,14 +16,19 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(-SpeedX, 0, 0) * Time.deltaTime); //敵が下方向に落ちてくる
+        transform.Translate(new Vector3(-SpeedX, 0, 0) * Time.deltaTime); 
 
         //enemyLifeTimeをフレーム間の時間を減少させる
-        moveLifeTime = moveLifeTime - Time.deltaTime;
-        if (moveLifeTime < 0)
+        LifeTime = LifeTime - Time.deltaTime;
+        if (LifeTime < 0)
         {
             Destroy(this.gameObject);//このオブジェクトを削除
         }
 
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        Destroy(this.gameObject);
     }
 }

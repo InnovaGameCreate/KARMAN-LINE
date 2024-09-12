@@ -14,10 +14,11 @@ public class Baramaki : MonoBehaviour
     private Vector3 posi;
     private int a;
     private float ranX;
+    private float ranZ;
     // Start is called before the first frame update
     void Start()
     {
-        waitTime += lagTime;
+        waitTime = lagTime;
     }
 
     // Update is called once per frame
@@ -32,13 +33,19 @@ public class Baramaki : MonoBehaviour
         else
         {
             a = 0;
-            while (a < 8)
+            while (a < 5)
             {
-                ranX = Random.Range(bulletX * -1, bulletX);
-                Instantiate(bulletPrefab, new Vector3(ranX + posi.x, bulletY + posi.y, bulletZ + posi.z), bulletPrefab.transform.rotation);
+                ranX = Random.Range(bulletX, bulletX + 3);
+                ranZ = Random.Range(bulletZ * -1, bulletZ);
+                Instantiate(bulletPrefab, new Vector3(ranX , 5, ranZ), bulletPrefab.transform.rotation);
                 a++;
             }
             waitTime = 0;
         }
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        Destroy(this.gameObject);
     }
 }
