@@ -19,7 +19,7 @@ public class AttackPower : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
         HP health = collision.gameObject.GetComponent<HP>();
         Debug.Log("Collision detected with: " + collision.gameObject.name);
