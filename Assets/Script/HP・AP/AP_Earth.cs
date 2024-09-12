@@ -21,7 +21,7 @@ public class AttackPower : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        HP health = collision.gameObject.GetComponent<HP>();
+        HP_Enemy health = collision.gameObject.GetComponent<HP_Enemy>();
 
         if (health != null)
         {
@@ -29,10 +29,6 @@ public class AttackPower : MonoBehaviour
             health.TakeDamage(damageAmount);
         }
 
-        if (collision.gameObject.CompareTag("Earth"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEarth‚ÌŽž
-        {
-            Destroy(this.gameObject);
-        }
 
         if (collision.gameObject.CompareTag("Enemy"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEnemy‚ÌŽž
          {
