@@ -18,5 +18,10 @@ public class GoSampleScene : MonoBehaviour
         {
             SceneManager.LoadScene("Main");
         }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            SceneManager.LoadScene("‘€ìà–¾");
+        }
     }
 }

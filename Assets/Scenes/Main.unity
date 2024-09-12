@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletspeed: 1000
   lifetime: 2.5
-  fireCooldown: 2
+  fireCooldown: 3
   explosionPrefab: {fileID: 8659883692947315746, guid: 35684d2137e4ac847b5eb997c32250bc, type: 3}
 --- !u!114 &1938227258
 MonoBehaviour:
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4410507923556557576, guid: 8f055681fbb8f214ebc21c2cb42b86f9, type: 3}
   fireCooldown: 8
   bulletSpeed: 2000
-  lifeTime: 1
+  lifeTime: 1.2
 --- !u!1 &2079901979
 GameObject:
   m_ObjectHideFlags: 0
