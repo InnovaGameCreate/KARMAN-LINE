@@ -22,7 +22,7 @@ public class explosion : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             Destroy(this.gameObject);
             Instantiate(expPrefab, transform.position, expPrefab.transform.rotation);

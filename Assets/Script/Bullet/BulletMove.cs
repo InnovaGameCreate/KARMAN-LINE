@@ -23,12 +23,13 @@ public class BulletMove : MonoBehaviour
 
         if (time > timeReset)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 bullet = Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
 
                 rb = bullet.GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * bulletSpeed);
+                Vector3 force1 = new Vector3(1.0f, 0.0f, 0.0f);
+                rb.AddForce(force1 * bulletSpeed);
 
                 Destroy(bullet, lifeTime);
                 time = 0;
