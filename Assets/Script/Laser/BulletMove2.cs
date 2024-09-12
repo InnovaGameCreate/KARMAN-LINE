@@ -45,16 +45,16 @@ public class BulletMove2 : MonoBehaviour
                 bullet2 = Instantiate(bullet2Prefab, transform.position, bullet2Prefab.transform.rotation);
 
                 rb2 = bullet2.GetComponent<Rigidbody>();
-                rb2.AddForce(transform.forward * bullet2Speed);
+                Vector3 force1 = new Vector3(1.0f, 0.0f, 0.0f);
+                rb2.AddForce(force1 * bullet2Speed);
 
                 Destroy(bullet2, lifeTime2);
-
                 Gage = Gage - 10;
             }
         }
         if (Gage > 10)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 Debug.Log("ÉQÅ[ÉWÇ™ë´ÇËÇƒÇ¢Ç‹ÇπÇÒ");
             }
