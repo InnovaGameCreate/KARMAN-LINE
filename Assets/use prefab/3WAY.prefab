@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5402601012129735618}
   - component: {fileID: -2589753140447582177}
   - component: {fileID: 762128882419547638}
+  - component: {fileID: 7633539882850681040}
   m_Layer: 0
   m_Name: 3WAY
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 3920405160637024716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -147,3 +148,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
+--- !u!114 &7633539882850681040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3920405160637024716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552b283926458944ebf02e5f58138cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpeedX: 50
+  moveLifeTime: 2

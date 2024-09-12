@@ -1,23 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class AttackPower : MonoBehaviour
+public class AP_Laser : MonoBehaviour
 {
     public float damageAmount = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -35,11 +34,6 @@ public class AttackPower : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("Enemy"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEnemy‚ÌŽž
-         {
-            Destroy(this.gameObject);
-         }
-
-        if (collision.gameObject.CompareTag("Bullet"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEarth‚ÌŽž
         {
             Destroy(this.gameObject);
         }

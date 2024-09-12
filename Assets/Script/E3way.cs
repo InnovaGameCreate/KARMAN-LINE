@@ -28,9 +28,9 @@ public class E3way : MonoBehaviour
         }
         else
         {
-            Instantiate(bulletPrefab1, new Vector3(posi.x, posi.y, posi.z), bulletPrefab1.transform.rotation);
-            Instantiate(bulletPrefab2, new Vector3(posi.x, posi.y, posi.z), bulletPrefab2.transform.rotation);
-            Instantiate(bulletPrefab3, new Vector3(posi.x, posi.y, posi.z), bulletPrefab3.transform.rotation);
+            Instantiate(bulletPrefab1, new Vector3(20, 1,  5), bulletPrefab1.transform.rotation);
+            Instantiate(bulletPrefab2, new Vector3(20, 1,  0), bulletPrefab2.transform.rotation);
+            Instantiate(bulletPrefab3, new Vector3(20, 1, -5), bulletPrefab3.transform.rotation);
             waitTime = 0;
         }
     }
