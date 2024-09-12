@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: "Assets/Scenes/Main@\u85E4\u539F\u714C\u57FA.unity"
+    path: Assets/Scenes/Main.unity
     guid: 022586172c9969e42975188b8cc56e8a
   - enabled: 1
     path: Assets/Scenes/Failure.unity

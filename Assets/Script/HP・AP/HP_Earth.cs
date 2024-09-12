@@ -5,9 +5,10 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class HP : MonoBehaviour
+public class HP_Earth : MonoBehaviour
 {
     public Slider HPBar; // スライダーの参照
+    public Text invulnerabilityText; // 無敵状態を表示するためのTextコンポーネント
     public float maxHP = 100f;
     private float currentHP;
 
@@ -28,6 +29,11 @@ public class HP : MonoBehaviour
         {
             HPBar.value = maxHP;
         }
+
+        if (invulnerabilityText != null)
+        {
+            invulnerabilityText.gameObject.SetActive(false); // 最初は非表示
+        }
     }
 
     // Update is called once per frame
@@ -42,6 +48,12 @@ public class HP : MonoBehaviour
                 invulnerable = false;
                 cooldownTimer = invulnerabilityCooldown; // クールダウンタイマーを開始
                 canInvulnerable = false; // 無敵状態の再発動を防ぐ
+
+                // 無敵状態が終わったらテキストを非表示にする
+                if (invulnerabilityText != null)
+                {
+                    invulnerabilityText.gameObject.SetActive(false);
+                }
             }
         }
 
@@ -61,8 +73,15 @@ public class HP : MonoBehaviour
             invulnerable = true;
             invulnerabilityTimer = invulnerabilityDuration;
             canInvulnerable = false; // 無敵状態を発動したので再発動を防ぐ
+
+            // 無敵状態になったらテキストを表示する
+            if (invulnerabilityText != null)
+            {
+                invulnerabilityText.gameObject.SetActive(true);
+            }
         }
     }
+
     public void TakeDamage(float damage)
     {
         if (invulnerable) return; // 無敵状態ならダメージを無効化
@@ -79,12 +98,10 @@ public class HP : MonoBehaviour
         }
     }
 
-    
     void Die()
     {
         SceneManager.LoadScene("Failure");
     }
-
 
 
 }
