@@ -39,7 +39,12 @@ public class AttackPower : MonoBehaviour
             Destroy(this.gameObject);
          }
 
-        if (collision.gameObject.CompareTag("Bullet"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEarth‚ÌŽž
+        if (collision.gameObject.CompareTag("Bullet_E"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEarth‚ÌŽž
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Laser"))//collision‚É“ü‚Á‚Ä‚¢‚éTag‚ªEarth‚ÌŽž
         {
             Destroy(this.gameObject);
         }

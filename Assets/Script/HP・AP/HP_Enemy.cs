@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class HP : MonoBehaviour
+public class HP_Enemy : MonoBehaviour
 {
     public Slider HPBar; // スライダーの参照
     public float maxHP = 100f;
@@ -27,6 +26,7 @@ public class HP : MonoBehaviour
     {
         
     }
+
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
@@ -41,12 +41,9 @@ public class HP : MonoBehaviour
         }
     }
 
-    
+
     void Die()
     {
         SceneManager.LoadScene("Clear");
     }
-
-
-
 }

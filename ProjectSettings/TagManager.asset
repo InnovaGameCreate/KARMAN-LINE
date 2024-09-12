@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Earth
   - Enemy
-  - Bullet
   - Laser
+  - Bullet_P
+  - Bullet_E
   layers:
   - Default
   - TransparentFX
