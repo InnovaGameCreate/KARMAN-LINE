@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -8,13 +9,14 @@ public class BulletMove2 : MonoBehaviour
     [SerializeField] private float bullet2Speed;
     [SerializeField] private float lifeTime2;
     [SerializeField] private GameObject bullet2Prefab;
+
     private GameObject bullet2;
     private Rigidbody rb2;
     private int Gage = 10;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     public void ScoreUp()
@@ -38,7 +40,7 @@ public class BulletMove2 : MonoBehaviour
     {
         if (Gage == 10)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 bullet2 = Instantiate(bullet2Prefab, transform.position, bullet2Prefab.transform.rotation);
 

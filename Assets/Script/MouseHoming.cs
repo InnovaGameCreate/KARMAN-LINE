@@ -16,8 +16,9 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         mouse = Input.mousePosition;
-        transform.localScale = new Vector3((float)0.01,(float) 0.01,(float) 0.01); // Ç±Ç±Ç≈ÉXÉPÅ[ÉãÇê›íË
-        target = Camera.main.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y,2 ));
+        target = Camera.main.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y,50));
+        target.y = 1;
+
         this.transform.position = target;
     }
 
