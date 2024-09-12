@@ -25,7 +25,7 @@ public class exp : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        if (other.gameObject.CompareTag("Bullet"))
+        if (other.gameObject.CompareTag("Bullet_E"))
         {
             Destroy(other.gameObject);
             particleSystem.Stop();

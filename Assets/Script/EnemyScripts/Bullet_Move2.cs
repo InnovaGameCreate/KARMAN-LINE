@@ -16,7 +16,7 @@ public class Bullet_Move2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(-SpeedX, 0, 0) * Time.deltaTime); //“G‚ª‰º•ûŒü‚É—‚¿‚Ä‚­‚é
+        transform.Translate(new Vector3(-SpeedX, 0, 0) * Time.deltaTime); 
 
         //enemyLifeTime‚ğƒtƒŒ[ƒ€ŠÔ‚ÌŠÔ‚ğŒ¸­‚³‚¹‚é
         LifeTime = LifeTime - Time.deltaTime;

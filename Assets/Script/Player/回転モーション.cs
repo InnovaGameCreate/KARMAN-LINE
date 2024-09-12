@@ -44,4 +44,15 @@ public class 課題 : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        // 衝突した物体のRigidbodyコンポーネントを取得
+        Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            // 衝突した物体のXベクトルを反転
+            rb.velocity = new Vector3(-rb.velocity.x, rb.velocity.y, rb.velocity.z);
+        }
+    }
 }

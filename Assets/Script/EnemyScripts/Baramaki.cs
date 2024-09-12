@@ -33,11 +33,11 @@ public class Baramaki : MonoBehaviour
         else
         {
             a = 0;
-            while (a < 5)
+            while (a < 8)
             {
                 ranX = Random.Range(bulletX, bulletX + 3);
                 ranZ = Random.Range(bulletZ * -1, bulletZ);
-                Instantiate(bulletPrefab, new Vector3(ranX , 5, ranZ), bulletPrefab.transform.rotation);
+                Instantiate(bulletPrefab, new Vector3(ranX , 1, ranZ), bulletPrefab.transform.rotation);
                 a++;
             }
             waitTime = 0;

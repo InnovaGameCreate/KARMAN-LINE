@@ -1,14 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyLaser : MonoBehaviour
+public class E3way : MonoBehaviour
 {
     public float lagTime = 1.0f; // ‰Šú’x‰„ŠÔ
     public float makeTime = 1.0f; // ’e‚ğ”­Ë‚·‚éŠÔŠÔŠu
     private float waitTime = 5; // Œ»İ‚Ì‘Ò‹@ŠÔ
     private bool firstShot = true; // ‰‚ß‚Ä‚Ì’e”­Ë‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
 
-    public GameObject bulletPrefab;
+    public GameObject bulletPrefab1;
+    public GameObject bulletPrefab2;
+    public GameObject bulletPrefab3;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +42,9 @@ public class EnemyLaser : MonoBehaviour
             else
             {
                 // ’e‚ğ”­Ë
-                Instantiate(bulletPrefab, new Vector3(20, 1, 0), bulletPrefab.transform.rotation);
+                Instantiate(bulletPrefab1, new Vector3(22, 1, 5), bulletPrefab1.transform.rotation);
+                Instantiate(bulletPrefab2, new Vector3(22, 1, 0), bulletPrefab2.transform.rotation);
+                Instantiate(bulletPrefab3, new Vector3(22, 1, -5), bulletPrefab3.transform.rotation);
                 waitTime = 0; // ‘Ò‹@ŠÔ‚ğƒŠƒZƒbƒg
             }
         }
