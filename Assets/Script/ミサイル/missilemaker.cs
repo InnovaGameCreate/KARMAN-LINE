@@ -25,7 +25,8 @@ public class bulletmaker : MonoBehaviour
             explosion = Instantiate(explosionPrefab, transform.position, explosionPrefab.transform.rotation);
 
             rb = explosion.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * bulletspeed);
+            Vector3 force1 = new Vector3(1.0f, 0.0f, 0.0f);
+            rb.AddForce(force1 * bulletspeed);
 
             Destroy(explosion, lifetime);
         }

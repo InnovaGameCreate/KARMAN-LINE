@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Main@\u85E4\u539F\u714C\u57FA.unity"
     guid: 022586172c9969e42975188b8cc56e8a
   - enabled: 1
     path: Assets/Scenes/Failure.unity
     guid: f4a78649605f97642be2fcf36d9fcea2
+  - enabled: 1
+    path: Assets/Scenes/Clear.unity
+    guid: 4ada7509780823a46a9c04c34aef7e05
   m_configObjects: {}

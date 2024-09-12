@@ -20,7 +20,7 @@ public class ‰Û‘è : MonoBehaviour
 
         for (int turn = 0; turn < 360; turn++)
         {
-            transform.Rotate(0, 1, 0);
+            transform.Rotate(1, 0, 0);
             yield return new WaitForSeconds(0.0001f);
         }
         coroutineBool = false;
