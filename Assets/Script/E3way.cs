@@ -14,7 +14,7 @@ public class E3way : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waitTime += lagTime;
+        waitTime = lagTime;
     }
 
     // Update is called once per frame
@@ -28,9 +28,9 @@ public class E3way : MonoBehaviour
         }
         else
         {
-            Instantiate(bulletPrefab1, new Vector3(20, 1,  5), bulletPrefab1.transform.rotation);
-            Instantiate(bulletPrefab2, new Vector3(20, 1,  0), bulletPrefab2.transform.rotation);
-            Instantiate(bulletPrefab3, new Vector3(20, 1, -5), bulletPrefab3.transform.rotation);
+            Instantiate(bulletPrefab1, new Vector3(22, 5,  5), bulletPrefab1.transform.rotation);
+            Instantiate(bulletPrefab2, new Vector3(22, 5,  0), bulletPrefab2.transform.rotation);
+            Instantiate(bulletPrefab3, new Vector3(22, 5, -5), bulletPrefab3.transform.rotation);
             waitTime = 0;
         }
     }

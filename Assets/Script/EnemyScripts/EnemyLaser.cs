@@ -3,46 +3,30 @@ using UnityEngine;
 
 public class EnemyLaser : MonoBehaviour
 {
-    // 状態を管理するフラグ
-    private bool isCharging = false;
-    private bool isCooldown = false;
-
-    // レーザー発射サイクルのタイミング
-    public float startDelay = 3f;      // ゲーム開始後の遅延
-    public float chargeTime = 5f;      // レーザーの溜め時間
-    public float cooldownTime = 6f;    // クールタイムの時間
-
-    void Start()
-    {
-        // サイクルを開始するコルーチンを呼び出す
-        StartCoroutine(LaserCycle());
-    }
-
-    IEnumerator LaserCycle()
-    {
-        // ゲーム開始後の遅延
-        yield return new WaitForSeconds(startDelay);
-
-        while (true)
+        [SerializeField] private GameObject bulletPrefab;
+        [SerializeField] private float makeTime;
+        private float waitTime;
+        [SerializeField] private float lagTime;
+        private Vector3 posi;
+        // Start is called before the first frame update
+        void Start()
         {
-            // 溜め始める
-            isCharging = true;
-            Debug.Log("Laser charging started...");
+            waitTime = lagTime;
+        }
 
-            // 溜め時間を待つ
-            yield return new WaitForSeconds(chargeTime);
+        // Update is called once per frame
+        void Update()
+        {
+            posi = this.transform.position;
 
-            // レーザー発射
-            isCharging = false;
-            Debug.Log("Laser fired!");
-
-            // クールダウンを開始
-            isCooldown = true;
-            yield return new WaitForSeconds(cooldownTime);
-
-            // クールダウン終了
-            isCooldown = false;
-            Debug.Log("Cooldown finished, ready to start cycle again.");
+            if (waitTime < makeTime)
+            {
+                waitTime = waitTime + Time.deltaTime;
+            }
+            else
+            {
+                Instantiate(bulletPrefab, new Vector3(22, 5, 0), bulletPrefab.transform.rotation);
+                waitTime = 0;
+            }
         }
     }
-}
