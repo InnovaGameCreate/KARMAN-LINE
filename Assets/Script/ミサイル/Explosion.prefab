@@ -44202,8 +44202,7 @@ GameObject:
   - component: {fileID: 974886911257304440}
   - component: {fileID: 3904716390230851342}
   - component: {fileID: 6491974425335559934}
-  - component: {fileID: 4411794422348443009}
-  - component: {fileID: -3969569523586991604}
+  - component: {fileID: 6032587521708168049}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -49294,7 +49293,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4411794422348443009
+--- !u!114 &6032587521708168049
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49303,28 +49302,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6367294891470209721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79ba5bb0b3780b4a98ce45e779b6441, type: 3}
+  m_Script: {fileID: 11500000, guid: bc817d4c38862724c8e6e8bbccbe7094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Repeating: 1
-  RepeatTime: 2
-  StartTime: 0
-  RandomVolume: 0
-  minVolume: 1
-  maxVolume: 1
---- !u!114 &-3969569523586991604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6367294891470209721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a53e62911c02b244be1c0df00749461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 1
+  lifetime: 2
 --- !u!1 &8716917882779623406
 GameObject:
   m_ObjectHideFlags: 0

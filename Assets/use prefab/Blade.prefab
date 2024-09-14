@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4633158883865710221}
   - component: {fileID: 2354917445484238978}
   - component: {fileID: 3985875579548510841}
-  - component: {fileID: 246901980176472552}
+  - component: {fileID: 5758065785989313911}
   m_Layer: 0
   m_Name: Blade
   m_TagString: Laser
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &246901980176472552
+--- !u!114 &5758065785989313911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4410507923556557576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9314a789ed50e44b96cecf386bb8ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 916e4fc681617af4488bcc69ae629f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 30
+  damageAmount: 50
