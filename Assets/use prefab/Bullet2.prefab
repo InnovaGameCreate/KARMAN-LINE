@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1903091491107140205}
   - component: {fileID: 1690676302030880036}
   - component: {fileID: -8031717598139820983}
-  - component: {fileID: -2441620610751076359}
-  - component: {fileID: -5064021717274250296}
+  - component: {fileID: 6429082083519839482}
+  - component: {fileID: 8858776762259668750}
   m_Layer: 0
   m_Name: Bullet2
   m_TagString: Bullet_E
@@ -135,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-2441620610751076359
+--- !u!114 &6429082083519839482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,12 +144,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4532426053725473913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1d0df61e1eeeda4aae2928d4cd136e4, type: 3}
+  m_Script: {fileID: 11500000, guid: d1d5b8f28a45b70489e16813ed611a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedX: 15
-  LifeTime: 10
---- !u!114 &-5064021717274250296
+  LifeTime: 5
+--- !u!114 &8858776762259668750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4532426053725473913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c53b0bf3b27ede34b96b4c661783f406, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b8b287497350734b942b1ac289eef02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 5

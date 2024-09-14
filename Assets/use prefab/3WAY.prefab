@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2698920386906935815}
   - component: {fileID: 5402601012129735618}
   - component: {fileID: -2589753140447582177}
-  - component: {fileID: 7633539882850681040}
-  - component: {fileID: 249007059105808020}
+  - component: {fileID: 2203194807883181551}
+  - component: {fileID: -4008741523340275452}
   m_Layer: 0
   m_Name: 3WAY
   m_TagString: Bullet_E
@@ -135,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7633539882850681040
+--- !u!114 &2203194807883181551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,12 +144,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3920405160637024716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552b283926458944ebf02e5f58138cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: e3512c96a37d5cd4ab37ad01d1886f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 40
-  LifeTime: 2
---- !u!114 &249007059105808020
+  SpeedX: 35
+  LifeTime: 3
+--- !u!114 &-4008741523340275452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3920405160637024716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c53b0bf3b27ede34b96b4c661783f406, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b8b287497350734b942b1ac289eef02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
+  damageAmount: 15
