@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3512c96a37d5cd4ab37ad01d1886f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpeedX: 35
+  SpeedX: 45
   LifeTime: 3
 --- !u!114 &-4008741523340275452
 MonoBehaviour:
@@ -161,4 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8b287497350734b942b1ac289eef02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 15
+  damageAmount: 20
